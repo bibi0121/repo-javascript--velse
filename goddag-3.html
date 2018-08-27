@@ -12,11 +12,14 @@
 
 
     <script>
+        // Erklæring af variablen navn - bed brugeren om værdi (navn)//
         let navn = prompt("Hvad hedder du?");
-        alert("hej " + navn);
-
-
-        if (sigGoddag) {
+        //Hvis navnet bliver opgivet: sig "goddag til navn"
+        if (navn != null && navn != "") {
+            alert("Goddag " + navn);
+        }
+        // Hvis navnet ikke bliver opgivet sig "goddag min ven"
+        else {
             alert("Goddag min ven");
         }
 
