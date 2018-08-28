@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript øvelse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <script>
+        // Jeg erklærer længden, viden og en besked:
+
+        let length = prompt("Må jeg få længden?"),
+            let width = prompt("Bredden på objekt?"),
+                besked;
+
+        //hvis både længden og viden er tal:
+
+        if (Number(width) && Number(length)) {
+
+            //Finder frem til arealet her:
+            alert("Længde: " +
+                length + " meter\nBredden: " +
+                width + " \meter \nArealet: " +
+                length * width + " kvadratmeter");
+        }
+        // Hvis det ikke kan regnes ud, så bliver det:
+        else {
+            //Giver en fejlmelding:
+            alert("Kan ikke regne ud");
+        }
+
+        // Hvis man vil starte forfra:
+
+        if (confirm("Vil du starte forfra?")) {
+            // Man starter forfra her:
+            location.reload();
+        }
+
+    </script>
+</body>
+
+</html>
