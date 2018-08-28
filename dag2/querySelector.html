@@ -9,13 +9,20 @@
 
 <body>
 
-    <button id="myBut"> klik </button>
+    <button id="myBut"> klik  mig</button>
 
     <script>
-        // const beskriver navnet på funktionen:
+        // const beskriver navnet på en variabel:
+        // EventHandlere er funktioner
 
         const myBut = document.querySelector("#myBut");
         console.log(myBut);
+
+        myBut.addEventListener("click", doSomething);
+
+        function doSomething() {
+            myBut.textContent = "Jeg er blevet klikket på!";
+        }
 
     </script>
 
